@@ -105,14 +105,14 @@ function install_wg(){
         #apt-get install -y software-properties-common
         #apt-get install -y openresolv
         #add-apt-repository -y ppa:wireguard/wireguard
-        apt-get install -y wireguard
+        apt-get install -y wireguard iptables resolvconf qrencode
         #install_tools "apt-get"
     elif [ "$RELEASE" == "debian" ]; then
         #echo "deb http://deb.debian.org/debian buster-backports main" >> /etc/apt/sources.list
         #printf 'Package: *\nPin: release a=unstable\nPin-Priority: 90\n' > /etc/apt/preferences.d/limit-unstable
         #apt update
 	#apt install -y linux-image-5.8.0-0.bpo.2-cloud-amd64
-	apt install -y wireguard
+	apt install -y wireguard iptables resolvconf qrencode
 	#apt update
         #apt install -y wireguard
         #install_tools "apt"
